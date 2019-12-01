@@ -131,13 +131,13 @@ public class RefreshPdf {
                     if (listFile[i].getName().endsWith(".pdf") || listFile[i].getName().endsWith(".PDF")) {
                         if (!isExist(listFile[i].getAbsolutePath())) {
                             String title = listFile[i].getName().substring(0, listFile[i].getName().length() - 4);
-                            String imageName = title + ".jpeg";
+                            String imageName = title + ".png";
                             File imageItem = new File(fileImages, imageName);
                             if (!imageItem.exists()) {
                                 bitmap = (Bitmap) findCover.FindCover(context, listFile[i].getAbsolutePath());
                                 if (bitmap != null) {
                                     fileOutputStreamImages = new FileOutputStream(imageItem);
-                                    bitmap.compress(Bitmap.CompressFormat.JPEG, 90, fileOutputStreamImages);
+                                    bitmap.compress(Bitmap.CompressFormat.PNG, 90, fileOutputStreamImages);
                                 } else {
                                     File fileNull = new File("null");
                                     imageItem = fileNull;
