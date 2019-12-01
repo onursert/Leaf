@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="30dp"
-        android:text="Pdf Content"
+        android:text="PDF Content"
         android:textAppearance="?android:textAppearanceLarge"
         android:textColor="#00574B" />
 
