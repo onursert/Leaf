@@ -5,7 +5,7 @@ Leaf: PDF Reader - 2019 (Java) (Android)<br>
 Leaf: PDF Reader (Fast, Lite, Simple and Open Source)<br><br>
 
 -Very fast PDF detect and sync<br>
--Requires low mermory space (approximately 3-4 mb)<br>
+-Requires low mermory space<br>
 -User friendly experience with modern design<br>
 -Open source project and library (github.com/onursert/leaf)<br><br>
 
