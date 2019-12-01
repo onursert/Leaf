@@ -115,9 +115,9 @@ public class CustomImageView extends android.support.v7.widget.AppCompatImageVie
                         upX = event.getX();
                         float deltaX = downX - upX;
                         if (Math.abs(deltaX) > 0) {
-                            if (deltaX >= 300 && clickDuration < 300) {
+                            if (deltaX >= 250 && clickDuration < 300) {
                                 openPdf.showNext();
-                            } else if (deltaX <= -300 && clickDuration < 300) {
+                            } else if (deltaX <= -250 && clickDuration < 300) {
                                 openPdf.showPrevious();
                             }
                             pageNumber = openPdf.pdfRendererPage.getIndex();
