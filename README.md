@@ -26,4 +26,4 @@ PDF Reader (Viewer) Features<br>
 -Save where I left feature<br>
 -Zoom in or out PDF pages<br>
 -Jump between pages in a PDF with PDF content list or seek bar<br>
--Shows current page name and current page number / page count in seek bar<br><br>
+-Shows current page number (name) / page count in seek bar<br><br>
