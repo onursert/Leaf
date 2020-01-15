@@ -7,7 +7,7 @@
   <li>Very fast PDF detect and sync</li>
   <li>Requires low mermory space</li>
   <li>User friendly experience with modern design</li>
-  <li>Open source project and library (github.com/onursert/leaf)</li>
+  <li>Open source project and library (<a href="https://github.com/onursert/leaf">github.com/onursert/leaf</a>)</li>
 </ul>
 
 <h3>Settings</h3>
