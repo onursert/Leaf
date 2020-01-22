@@ -5,9 +5,9 @@
 <h2>Leaf: PDF Reader (Fast, Lite, Simple and Open Source)</h2>
 <ul>
   <li>Very fast PDF detect and sync</li>
-  <li>Requires low mermory space</li>
-  <li>User friendly experience with modern design</li>
-  <li>Open source project and library (<a href="https://github.com/onursert/leaf">github.com/onursert/leaf</a>)</li>
+  <li>Requires low memory space</li>
+  <li>User-friendly experience with modern design</li>
+  <li>Open-source project and library (<a href="https://github.com/onursert/leaf">github.com/onursert/leaf</a>)</li>
 </ul>
 
 <h3>Settings</h3>
@@ -19,12 +19,12 @@
 
 <h3>Library Features</h3>
 <ul>
-  <li>Edit PDF by changing title</li>
-  <li>Delete PDF from library or phone memory</li>
-  <li>Search PDF with title in library</li>
+  <li>Edit PDF by changing the title</li>
+  <li>Delete PDF from the library or phone memory</li>
+  <li>Search PDF with title in the library</li>
   <li>View PDF list with list view (1 grid for vertical orientation) or grid view (2 grid for horizontal orientation or tablets)</li>
   <li>Sort and show PDF by title, import time or open time</li>
-  <li>Show or hide import time and open time on interface</li>
+  <li>Show or hide import time and open time on the interface</li>
 </ul>
 
 <h3>PDF Reader (Viewer) Features</h3>
