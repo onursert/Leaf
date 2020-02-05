@@ -1,5 +1,5 @@
 # Leaf
-<p>Leaf: PDF Reader - 2019 (Java) (Android)</p>
+<p>Leaf: PDF Reader - 2019 (Java) (Android App)</p>
 <a href="https://play.google.com/store/apps/details?id=com.github.onursert.leaf">Leaf on Google Play</a>
 
 <h2>Leaf: PDF Reader (Fast, Lite, Simple and Open Source)</h2>
