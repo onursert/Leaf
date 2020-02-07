@@ -305,6 +305,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intentContact = new Intent(Intent.ACTION_VIEW, Uri.parse("https://onursert.org/"));
                 startActivity(intentContact);
                 break;
+            case R.id.nav_bookpub:
+                Intent intentBookPub = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.github.onursert.bookpub"));
+                startActivity(intentBookPub);
+                break;
+            case R.id.nav_komik:
+                Intent intentKomik = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.github.onursert.komik"));
+                startActivity(intentKomik);
+                break;
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
