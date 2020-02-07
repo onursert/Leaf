@@ -75,6 +75,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.getMenu().getItem(1).setCheckable(false);
         navigationView.getMenu().getItem(2).setCheckable(false);
         navigationView.getMenu().getItem(3).setCheckable(false);
+        navigationView.getMenu().getItem(4).setCheckable(false);
+        navigationView.getMenu().getItem(5).setCheckable(false);
+        navigationView.getMenu().getItem(4).setTitle(Html.fromHtml("<font color='#008577'>BookPub: EPUB Reader</font>"));
+        navigationView.getMenu().getItem(5).setTitle(Html.fromHtml("<font color='#008577'>Komik: Comics Reader</font>"));
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
