@@ -23,6 +23,16 @@
     </group>
     
     <group
+        android:id="@+id/main_nav_menu_bottom"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_latex_to_pdf"
+            android:icon="@drawable/ic_autorenew_black_24dp"
+            android:title="LaTeX to PDF" />
+    </group>
+    
+    <group
         android:id="@+id/main_nav_menu_commercial"
         android:checkableBehavior="none">
 
