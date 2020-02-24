@@ -306,68 +306,80 @@ public class RefreshPdf {
 
     //Functions Which Come From Another Class
     public void addOpenTime(List<List> pdfList, String path, String openTime) throws IOException {
-        for (int i = 0; i < pdfList.size(); i++) {
-            if (pdfList.get(i).get(2).equals(path)) {
-                List pdfInfo = new LinkedList();
-                pdfInfo.add(pdfList.get(i).get(0)); //pdfTitle
-                pdfInfo.add(pdfList.get(i).get(1)); //pdfCover
-                pdfInfo.add(pdfList.get(i).get(2)); //pdfPath
-                pdfInfo.add(pdfList.get(i).get(3)); //importTime
-                pdfInfo.add(openTime); //openTime
-                pdfInfo.add(pdfList.get(i).get(5)); //currentPage
-                pdfList.set(i, pdfInfo);
-                break;
+        if (pdfList != null) {
+            final int pdfListSize = pdfList.size();
+            for (int i = 0; i < pdfListSize; i++) {
+                if (pdfList.get(i).get(2).equals(path)) {
+                    List pdfInfo = new LinkedList();
+                    pdfInfo.add(pdfList.get(i).get(0)); //pdfTitle
+                    pdfInfo.add(pdfList.get(i).get(1)); //pdfCover
+                    pdfInfo.add(pdfList.get(i).get(2)); //pdfPath
+                    pdfInfo.add(pdfList.get(i).get(3)); //importTime
+                    pdfInfo.add(openTime); //openTime
+                    pdfInfo.add(pdfList.get(i).get(5)); //currentPage
+                    pdfList.set(i, pdfInfo);
+                    break;
+                }
             }
+            sortByPreferences(pdfList);
+            customAdapter.notifyDataSetChanged();
         }
-        sortByPreferences(pdfList);
-        customAdapter.notifyDataSetChanged();
     }
     public void editPdf(List<List> pdfList, String title, String path) throws IOException {
-        for (int i = 0; i < pdfList.size(); i++) {
-            if (pdfList.get(i).get(2).equals(path)) {
-                List pdfInfo = new LinkedList();
-                pdfInfo.add(title); //pdfTitle
-                pdfInfo.add(pdfList.get(i).get(1)); //pdfCover
-                pdfInfo.add(pdfList.get(i).get(2)); //pdfPath
-                pdfInfo.add(pdfList.get(i).get(3)); //importTime
-                pdfInfo.add(pdfList.get(i).get(4)); //openTime
-                pdfInfo.add(pdfList.get(i).get(5)); //currentPage
-                pdfList.set(i, pdfInfo);
-                break;
+        if (pdfList != null) {
+            final int pdfListSize = pdfList.size();
+            for (int i = 0; i < pdfListSize; i++) {
+                if (pdfList.get(i).get(2).equals(path)) {
+                    List pdfInfo = new LinkedList();
+                    pdfInfo.add(title); //pdfTitle
+                    pdfInfo.add(pdfList.get(i).get(1)); //pdfCover
+                    pdfInfo.add(pdfList.get(i).get(2)); //pdfPath
+                    pdfInfo.add(pdfList.get(i).get(3)); //importTime
+                    pdfInfo.add(pdfList.get(i).get(4)); //openTime
+                    pdfInfo.add(pdfList.get(i).get(5)); //currentPage
+                    pdfList.set(i, pdfInfo);
+                    break;
+                }
             }
+            sortByPreferences(pdfList);
+            customAdapter.notifyDataSetChanged();
         }
-        sortByPreferences(pdfList);
-        customAdapter.notifyDataSetChanged();
     }
     public void deletePdf(List<List> pdfList, String path, Boolean deleteDevice) throws IOException {
-        for (int i = 0; i < pdfList.size(); i++) {
-            if (pdfList.get(i).get(2).equals(path)) {
-                pdfList.remove(i);
-                if (deleteDevice) {
-                    File file = new File(path);
-                    file.delete();
+        if (pdfList != null) {
+            final int pdfListSize = pdfList.size();
+            for (int i = 0; i < pdfListSize; i++) {
+                if (pdfList.get(i).get(2).equals(path)) {
+                    pdfList.remove(i);
+                    if (deleteDevice) {
+                        File file = new File(path);
+                        file.delete();
+                    }
+                    break;
                 }
-                break;
             }
+            sortByPreferences(pdfList);
+            customAdapter.notifyDataSetChanged();
         }
-        sortByPreferences(pdfList);
-        customAdapter.notifyDataSetChanged();
     }
     public void addCurrentPage(List<List> pdfList, String path, Integer currentPage) throws IOException {
-        for (int i = 0; i < pdfList.size(); i++) {
-            if (pdfList.get(i).get(2).equals(path)) {
-                List pdfInfo = new LinkedList();
-                pdfInfo.add(pdfList.get(i).get(0)); //pdfTitle
-                pdfInfo.add(pdfList.get(i).get(1)); //pdfCover
-                pdfInfo.add(pdfList.get(i).get(2)); //pdfPath
-                pdfInfo.add(pdfList.get(i).get(3)); //importTime
-                pdfInfo.add(pdfList.get(i).get(4)); //openTime
-                pdfInfo.add(currentPage); //currentPage
-                pdfList.set(i, pdfInfo);
-                break;
+        if (pdfList != null) {
+            final int pdfListSize = pdfList.size();
+            for (int i = 0; i < pdfListSize; i++) {
+                if (pdfList.get(i).get(2).equals(path)) {
+                    List pdfInfo = new LinkedList();
+                    pdfInfo.add(pdfList.get(i).get(0)); //pdfTitle
+                    pdfInfo.add(pdfList.get(i).get(1)); //pdfCover
+                    pdfInfo.add(pdfList.get(i).get(2)); //pdfPath
+                    pdfInfo.add(pdfList.get(i).get(3)); //importTime
+                    pdfInfo.add(pdfList.get(i).get(4)); //openTime
+                    pdfInfo.add(currentPage); //currentPage
+                    pdfList.set(i, pdfInfo);
+                    break;
+                }
             }
+            sortByPreferences(pdfList);
+            customAdapter.notifyDataSetChanged();
         }
-        sortByPreferences(pdfList);
-        customAdapter.notifyDataSetChanged();
     }
 }
