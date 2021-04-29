@@ -13,17 +13,20 @@ import java.io.IOException;
 public class DeletePdfDialog extends Dialog implements View.OnClickListener {
 
     public Activity activity;
+    private String pdfName;
     private String pdfPath;
     RefreshPdf refreshPdf;
     CustomAdapter customAdapter;
 
+    public TextView name;
+    public CheckBox deleteDevice;
     public Button delete;
     public Button cancel;
-    public CheckBox deleteDevice;
 
-    public DeletePdfDialog(Activity activity, String pdfPath, RefreshPdf refreshPdf, CustomAdapter customAdapter) {
+    public DeletePdfDialog(Activity activity, String pdfName, String pdfPath, RefreshPdf refreshPdf, CustomAdapter customAdapter) {
         super(activity);
         this.activity = activity;
+        this.pdfName = pdfName;
         this.pdfPath = pdfPath;
         this.refreshPdf = refreshPdf;
         this.customAdapter = customAdapter;
@@ -34,6 +37,9 @@ public class DeletePdfDialog extends Dialog implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.delete_pdf_dialog);
+        
+        name = (TextView) findViewById(R.id.pdfNameTextView);
+        name.setText("Do you want to delete " + pdfName);
 
         deleteDevice = (CheckBox) findViewById(R.id.deleteCheckBox);
 
