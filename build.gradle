@@ -25,14 +25,14 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.github.onursert.leaf"
         minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 22
-        versionName "2.2"
+        targetSdkVersion 30
+        versionCode 23
+        versionName "2.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
